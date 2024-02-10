@@ -18,40 +18,18 @@
 
 class Contact
 {
-	private:
-		std::string	fn;
-		std::string	ln;
-		std::string	nn;
-		std::string	pn;
-		std::string	ds;
 	public:
-		Contact()
-		{
-		}
-		void	Initialize()
-		{
-			std::cout << "Insert First Name" << std::endl;
-			while (fn.empty())
-				std::cin >> fn;
-			std::cout << "Insert Last Name" << std::endl;
-			while (ln.empty())
-				std::cin >> ln;
-			std::cout << "Insert Nick Name" << std::endl;
-			while (nn.empty())
-				std::cin >> nn;
-			std::cout << "Insert Phone Number" << std::endl;
-			while (pn.empty())
-				std::cin >> pn;
-			std::cout << "Insert Darkest Secret" << std::endl;
-			while (ds.empty())
-				std::cin >> ds;
-		}
+		std::string	firstName;
+		std::string	lastName;
+		std::string	nickName;
+		std::string	phoneNumber;
+		std::string	darkestSecret;
 };
 
 class PhoneBook
 {
-	private:
-		Contact Contacts[7];
+	public:
+		Contact Contacts[8];
 };
 
 #endif
