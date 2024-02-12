@@ -1,7 +1,8 @@
-NAME = phonebook
+NAME = Account
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
-SRC = PhoneBook.cpp
+SRC = tests.cpp	\
+		Account.cpp
 OBJ = $(SRC:.cpp=.o)
 
 .cpp.o:
